@@ -1,0 +1,99 @@
+﻿@model VibrantVoluntaire2.Models.NGOAcc
+
+@{
+    ViewBag.Title = "NGODetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>NGODetails</h2>
+
+<div>
+    <h4>NGOAcc</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NGOname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NGOname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vision)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vision)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mission)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mission)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.objective)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.objective)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HQlocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HQlocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.websiteaddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.websiteaddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.emailaddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emailaddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.establisheddate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.establisheddate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SMlink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SMlink)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NGOId }) |
+    @Html.ActionLink("Back to List", "NGO")
+</p>
